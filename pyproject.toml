@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools","wheel","torch"]
+requires = ["setuptools","wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -29,8 +29,6 @@ requires-python = ">= 3.7"
 
 dependencies = [
     "wheel",
-    "torch",
-    "torchvision",
     "transformers",
     "tokenizers",
     "numpy",
@@ -41,8 +39,6 @@ dependencies = [
     "mmdet>=3.0.0",
     "mmengine>=0.7.1",
     "mmcv",
-    'mmyolo @ git+https://github.com/onuralpszr/mmyolo.git',
-
 ]
 
 [tool.setuptools]

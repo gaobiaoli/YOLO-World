@@ -1,5 +1,8 @@
 # Copyright (c) Tencent Inc. All rights reserved.
+
+# python image_demo.py configs/pretrain/yolo_world_l_t2i_bn_2e-4_100e_4x8gpus_obj365v1_goldg_train_lvis_minival.py pretrained_weights/yolow-v8_l_clipv2_frozen_t2iv2_bn_o365_goldg_pretrain.pth dog.jpeg 'dog,person' --threshold 0.05
 import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 import cv2
 import argparse
 import os.path as osp

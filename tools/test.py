@@ -2,7 +2,8 @@
 import argparse
 import os
 import os.path as osp
-
+import sys
+sys.path.append('/CV/gaobiaoli/project/yolo_world')
 from mmdet.engine.hooks.utils import trigger_visualization_hook
 from mmengine.config import Config, ConfigDict, DictAction
 from mmengine.evaluator import DumpResults
