@@ -1,0 +1,1 @@
+python ../mmyolo/tools/analysis_tools/benchmark.py work_dirs/yolo_world_v2_m_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_lvis_minival/20240402_170359/vis_data/config.py pretrained_weights/yolo_world_v2_m_obj365v1_goldg_pretrain-c6237d5b.pth

@@ -1,0 +1,8 @@
+python ../mmyolo/tools/analysis_tools/benchmark.py work_dirs/yolo_world_v2_s_vlpan_bn_2e-4_80e_8gpus_mask-refine_finetune_coco/20240403_103305/vis_data/config.py work_dirs/yolo_world_v2_s_vlpan_bn_2e-4_80e_8gpus_mask-refine_finetune_coco/20240403_103305/epoch_80.pth 
+python ../mmyolo/tools/analysis_tools/get_flops.py work_dirs/yolo_world_v2_s_vlpan_bn_2e-4_80e_8gpus_mask-refine_finetune_coco/20240403_103305/vis_data/config.py 
+
+
+
+TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=1 python tools/test.py configs/ft-CIS/yolo_world_v2_m_vlpan_bn_2e-4_80e_8gpus_mask-refine_finetune_coco.py 
+
+TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=1 python tools/test.py configs/ft-CIS/yolo_world_v2_m_vlpan_bn_2e-4_80e_8gpus_mask-refine_finetune_coco.py work_dirs/yolo_world_v2_m_vlpan_bn_2e-4_80e_8gpus_mask-refine_finetune_coco/epoch_80.pth 

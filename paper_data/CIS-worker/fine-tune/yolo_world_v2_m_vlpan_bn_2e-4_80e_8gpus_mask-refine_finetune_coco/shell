@@ -1,0 +1,2 @@
+
+python ../mmyolo/tools/analysis_tools/benchmark.py work_dirs/yolo_world_v2_m_vlpan_bn_2e-4_80e_8gpus_mask-refine_finetune_coco/20240403_123052/vis_data/config.py work_dirs/yolo_world_v2_m_vlpan_bn_2e-4_80e_8gpus_mask-refine_finetune_coco/epoch_80.pth 
